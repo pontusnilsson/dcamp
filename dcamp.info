@@ -3,10 +3,16 @@ description = DrupalCamp installation profile built on COD.
 core = 7.x
 
 ; Core
-dependencies[] = field_ui
 
 ; Contrib
 dependencies[] = admin_menu
 
 ; From COD
 dependencies[] = cod_session
+dependencies[] = cod_news
+
+; Devlopment modules
+dependencies[] = field_ui
+dependencies[] = devel
+dependencies[] = diff
+
