@@ -1,0 +1,6 @@
+name = DrupalCamp installation profile
+description = DrupalCamp installation profile built on COD.
+core = 7.x
+
+
+
