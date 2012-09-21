@@ -6,6 +6,8 @@ projects[browscap_ctools][verison] = 1.0
 projects[browscap_ctools][subdir] = contrib
 projects[browscap][version] = 1.3
 projects[browscap][subdir] = contrib
+projects[panels_everywhere][version] 1.0-rc1
+projects[panels_everywhere][subdir] = contrib
 
 ; Fetch the current version of NS Core.
 projects[cod][type] = module
