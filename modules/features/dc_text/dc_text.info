@@ -1,0 +1,11 @@
+name = Text
+description = Holds text formats, wysiwyg etc.
+core = 7.x
+package = DrupalCamp
+version = 7.x-1.0-beta1
+project = dc_text
+dependencies[] = features
+dependencies[] = filter
+features[features_api][] = api:1
+features[filter][] = dc_editor
+features[filter][] = dc_fullhtml

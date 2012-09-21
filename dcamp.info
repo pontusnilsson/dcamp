@@ -7,6 +7,9 @@ core = 7.x
 ; Contrib
 dependencies[] = admin_menu
 
+; Features
+dependencies[] = dc_text
+
 ; From COD
 dependencies[] = cod_session
 dependencies[] = cod_news
