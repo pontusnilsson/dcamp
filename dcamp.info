@@ -6,6 +6,7 @@ core = 7.x
 
 ; Contrib
 dependencies[] = admin_menu
+dependencies[] = panels
 
 ; Features
 dependencies[] = dc_text

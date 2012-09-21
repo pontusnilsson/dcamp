@@ -2,6 +2,9 @@ api = 2
 
 core = 7.x
 
+projects[panels][version] = 1.0
+projects[panels][subdir] = contrib
+
 ; Fetch the current version of NS Core.
 projects[cod][type] = module
 projects[cod][version] = 2.x
