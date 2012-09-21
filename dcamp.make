@@ -22,3 +22,8 @@ projects[wysiwyg][download][branch] = 7.x-2.x
 projects[wysiwyg][download][url] = http://git.drupal.org/project/wysiwyg.git
 projects[wysiwyg][subdir] = contrib
 
+
+; Libraries
+libraries[ckeditor][download][type] = get
+libraries[ckeditor][download][url] = http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.4/ckeditor_3.6.4.tar.gz
+libraries[ckeditor][destination] = libraries
