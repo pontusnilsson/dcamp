@@ -22,6 +22,7 @@ projects[wysiwyg][download][branch] = 7.x-2.x
 projects[wysiwyg][download][url] = http://git.drupal.org/project/wysiwyg.git
 projects[wysiwyg][subdir] = contrib
 
+projects[adaptivetheme][version] = 3.1
 
 ; Libraries
 libraries[ckeditor][download][type] = get
