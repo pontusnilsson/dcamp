@@ -2,8 +2,6 @@ api = 2
 
 core = 7.x
 
-projects[panels][version] = 1.0
-projects[panels][subdir] = contrib
 projects[browscap_ctools][verison] = 1.0
 projects[browscap_ctools][subdir] = contrib
 projects[browscap][version] = 1.3
