@@ -2,5 +2,11 @@ name = DrupalCamp Sweden
 description = DrupalCamp installation profile built on COD.
 core = 7.x
 
+; Core
+dependencies[] = fields_ui
 
+; Contrib
+dependencies[] = admin_menu
 
+; From COD
+dependencies[] = cod_session
