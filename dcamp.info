@@ -9,6 +9,7 @@ dependencies[] = admin_menu
 dependencies[] = panels
 dependencies[] = page_manager
 dependencies[] = browscap_ctools
+dependencies[] = wysiwyg
 
 ; Features
 dependencies[] = dc_text
