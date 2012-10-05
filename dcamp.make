@@ -27,6 +27,7 @@ projects[wysiwyg][download][url] = http://git.drupal.org/project/wysiwyg.git
 projects[wysiwyg][subdir] = contrib
 
 projects[adaptivetheme][version] = 3.1
+projects[at_panels_everywhere][version] = 3.0-rc1
 
 ; Libraries
 libraries[ckeditor][download][type] = get
