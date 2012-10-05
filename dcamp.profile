@@ -1,6 +1,15 @@
 <?php
 
 /**
+ * Implementation of hook_ctools_plugin_directory().
+ */
+function dcamp_ctools_plugin_directory($module, $plugin) {
+  if ($module == 'ctools' && !empty($plugin)) {
+    return "plugins/$plugin";
+  }
+}
+
+/**
  * Implements hook_form_FORM_ID_alter().
  */
 function dcamp_form_install_configure_form_alter(&$form, $form_state) {
