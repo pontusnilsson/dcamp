@@ -1,7 +1,11 @@
 <?php
 
+/**
+ * Implements hook_install().
+ */
 function dcamp_install() {
   theme_enable(array('dcamp'));
   variable_set('theme_default', 'dcamp');
+  variable_set('admin_theme', 'seven');
   variable_set('node_admin_theme', 'seven');
 }
