@@ -11,6 +11,9 @@ projects[browscap][subdir] = contrib
 projects[panels_everywhere][version] = 1.0-rc1
 projects[panels_everywhere][subdir] = contrib
 
+projects[twitter_pull][version] = 1.0-rc3
+projects[twitter_pull][subdir] = contrib
+
 ; Fetch the current version of NS Core.
 projects[cod][type] = module
 projects[cod][version] = 2.x
