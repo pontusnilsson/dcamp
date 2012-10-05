@@ -6,7 +6,7 @@
   core        = 7.x
   engine      = phptemplate
   screenshot  = screenshot.png
-  base theme  = adaptivetheme
+  base theme  = at_panels_everywhere
 
 
 ;----------// Modular stylesheets
