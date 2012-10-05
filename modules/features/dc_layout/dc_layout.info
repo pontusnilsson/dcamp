@@ -1,11 +1,14 @@
 name = Layout
 description = Holds layout.
 core = 7.x
-package = Features
+package = DrupalCamp
+php = 5.2.4
 version = 7.x-1.0-beta1
 project = dc_layout
 dependencies[] = panels_everywhere
 dependencies[] = strongarm
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:1
+features[variable][] = page_manager_node_view_disabled
 features[variable][] = panels_everywhere_site_template_enabled
+features[variable][] = theme_dcamp_settings
