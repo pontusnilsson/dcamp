@@ -6,6 +6,9 @@
 
 /* Smartphone portrait */
 @media only screen and (max-width:320px) {
+  nav.primary-menu-wrapper ul li {
+    width: 100%;
+  }
 }
 
 /* Smartphone landscape */
