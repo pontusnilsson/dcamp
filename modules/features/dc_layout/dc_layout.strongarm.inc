@@ -166,7 +166,7 @@ function dc_layout_strongarm() {
     'enable_context_regions' => 0,
     'enable_float_region_blocks' => 0,
     'enable_markup_overides' => 0,
-    'at-settings__active_tab' => 'edit-global-settings',
+    'at-settings__active_tab' => 'edit-bigscreen',
     'at_core' => '7.x-3.x',
   );
   $export['theme_dcamp_settings'] = $strongarm;
