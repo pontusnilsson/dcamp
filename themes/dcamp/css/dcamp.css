@@ -18,3 +18,8 @@ nav.primary-menu-wrapper {
 nav.primary-menu-wrapper ul {
   display:inline-block;
 }
+ul.menu li a.active {
+  color:#353D48;
+}
+
+
