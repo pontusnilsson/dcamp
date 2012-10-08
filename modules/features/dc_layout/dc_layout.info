@@ -12,6 +12,7 @@ dependencies[] = strongarm
 features[ctools][] = page_manager:pages_default:1
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:1
+features[page_manager_handlers][] = dcamp_site_template
 features[variable][] = page_manager_node_view_disabled
 features[variable][] = panels_everywhere_site_template_enabled
 features[variable][] = theme_dcamp_settings
