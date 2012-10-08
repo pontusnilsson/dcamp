@@ -1,9 +1,16 @@
 .pane-page-slogan {
   text-align:center;
   font-size:1.4em;
+  text-transform:uppercase;
 }
 .pane-page-logo {
   text-align:center;
+}
+.pane-page-site-name {
+  font-size:4.3em;
+  text-transform:uppercase;
+  text-align:center;
+  font-weight:bold;
 }
 nav ul.primary-menu a {
   text-transform:uppercase;
