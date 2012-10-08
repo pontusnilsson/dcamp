@@ -1,0 +1,14 @@
+name = Settings
+description = Holds settings.
+core = 7.x
+package = DrupalCamp
+version = 7.x-1.0-beta1
+project = dc_settings
+dependencies[] = ctools
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:1
+features[variable][] = site_403
+features[variable][] = site_404
+features[variable][] = site_name
+features[variable][] = site_slogan
