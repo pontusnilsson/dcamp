@@ -1,0 +1,20 @@
+.pane-page-slogan {
+  text-align:center;
+  font-size:1.4em;
+}
+.pane-page-logo {
+  text-align:center;
+}
+nav ul.primary-menu a {
+  text-transform:uppercase;
+  letter-spacing:0.15em;
+}
+nav ul.primary-menu a.active {
+  text-decoration:line-through;
+}
+nav.primary-menu-wrapper {
+  text-align:center;
+}
+nav.primary-menu-wrapper ul {
+  display:inline-block;
+}

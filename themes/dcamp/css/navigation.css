@@ -1,6 +1,9 @@
 /* CSS for major navigation elements such as menus, pager, superfish etc */
 
-a {}
+a {
+  color:#353d48;
+  text-decoration:none;
+}
 a:link    {}
 a:visited {}
 a:hover   {}
@@ -39,6 +42,7 @@ a:focus {}
   white-space: nowrap;
   padding: 0 10px;
 }
+
 .nav ul,
 .nav ul.menu,
 .nav ul.menu li {
