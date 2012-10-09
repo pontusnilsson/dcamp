@@ -29,6 +29,7 @@ function dc_news_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['row_class'] = 'teaser-item';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_dc_image']['id'] = 'field_dc_image';

@@ -33,4 +33,7 @@ ul.menu li a.active {
   color:#353D48;
 }
 
-
+.view-dc-news .teaser-item {
+  width:33%;
+  float:left;
+}
