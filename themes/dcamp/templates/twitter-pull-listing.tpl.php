@@ -33,9 +33,9 @@
   <?php if (is_array($tweets)): ?>
     <?php $tweet_count = count($tweets); ?>
 
-    <ul class="tweets-pulled-listing">
+    <ul class="tweets-pulled-listing view-three-three-three">
     <?php foreach ($tweets as $tweet_key => $tweet): ?>
-      <li class="tweet">
+      <li class="tweet teaser-item">
         <div class="tweet-authorphoto"><img src="<?php print $tweet->userphoto; ?>" alt="<?php print $tweet->username; ?>" /></div>
         <span class="tweet-author"><?php print l($tweet->username, 'http://twitter.com/' . $tweet->username); ?></span>
         <span class="tweet-text"><?php print twitter_pull_add_links($tweet->text); ?></span>
@@ -44,7 +44,7 @@
         <?php if ($tweet_key < $tweet_count - 1): ?>
           <div class="tweet-divider"></div>
         <?php endif; ?>
-        
+
       </li>
     <?php endforeach; ?>
     </ul>
