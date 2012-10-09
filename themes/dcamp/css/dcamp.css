@@ -2,6 +2,7 @@
   text-align:center;
   font-size:1.4em;
   text-transform:uppercase;
+  padding-top:1em;
 }
 .pane-page-logo {
   text-align:center;
@@ -11,6 +12,9 @@
   text-transform:uppercase;
   text-align:center;
   font-weight:bold;
+  line-height:1em;
+  max-width:880px;
+  margin:0 auto;
 }
 nav ul.primary-menu a {
   text-transform:uppercase;

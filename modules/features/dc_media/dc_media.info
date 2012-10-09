@@ -1,0 +1,9 @@
+name = Media
+description = Holds media settings.
+core = 7.x
+package = DrupalCamp
+version = 7.x-1.0-beta1
+project = dc_media
+dependencies[] = image
+features[features_api][] = api:1
+features[image][] = dc_teaser

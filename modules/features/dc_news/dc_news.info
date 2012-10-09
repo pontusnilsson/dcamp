@@ -1,0 +1,15 @@
+name = News
+description = Holds news related features.
+core = 7.x
+package = DrupalCamp
+version = 7.x-1.0-beta1
+project = dc_news
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = field_sql_storage
+dependencies[] = image
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:1
+features[field][] = node-news-field_dc_image
+features[views_view][] = dc_news

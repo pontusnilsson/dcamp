@@ -212,6 +212,27 @@ function dc_layout_default_page_manager_handlers() {
     $pane->locks = array();
     $display->content['new-8'] = $pane;
     $display->panels['menu_bar'][0] = 'new-8';
+    $pane = new stdClass();
+    $pane->pid = 'new-9';
+    $pane->panel = 'tertiary_content';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'dc_sponsor-panel_pane_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => 'Thank you for making Drupal even more awesome',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-9'] = $pane;
+    $display->panels['tertiary_content'][0] = 'new-9';
   $display->hide_title = PANELS_TITLE_PANE;
   $display->title_pane = 'new-2';
   $handler->conf['display'] = $display;
