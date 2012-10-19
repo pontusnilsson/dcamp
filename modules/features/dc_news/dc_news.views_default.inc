@@ -32,7 +32,7 @@ function dc_news_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['row_class'] = 'teaser-item';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Content: Image */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_dc_image']['id'] = 'field_dc_image';
   $handler->display->display_options['fields']['field_dc_image']['table'] = 'field_data_field_dc_image';
   $handler->display->display_options['fields']['field_dc_image']['field'] = 'field_dc_image';

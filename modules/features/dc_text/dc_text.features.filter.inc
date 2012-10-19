@@ -14,7 +14,7 @@ function dc_text_filter_default_formats() {
   $formats['dc_editor'] = array(
     'format' => 'dc_editor',
     'name' => 'HTML editor',
-    'cache' => '1',
+    'cache' => '0',
     'status' => '1',
     'weight' => '0',
     'filters' => array(
@@ -36,6 +36,11 @@ function dc_text_filter_default_formats() {
       ),
       'filter_htmlcorrector' => array(
         'weight' => '10',
+        'status' => '1',
+        'settings' => array(),
+      ),
+      'filter_lexicon' => array(
+        'weight' => '50',
         'status' => '1',
         'settings' => array(),
       ),

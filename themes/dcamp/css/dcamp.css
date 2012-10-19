@@ -7,7 +7,7 @@
 .pane-page-logo {
   text-align:center;
 }
-.pane-page-site-name {
+#site-name {
   font-size:3em;
   text-transform:uppercase;
   text-align:center;
@@ -50,7 +50,7 @@ ul.menu li a.active {
     width:48%;
     margin: 0 1%;
   }
-  .pane-page-site-name {
+  #site-name {
     font-size:4.3em;
   }
 }
@@ -60,7 +60,7 @@ ul.menu li a.active {
     width:30%;
     margin: 0 1.5%;
   }
-  .pane-page-site-name {
+  #site-name {
     font-size:4.3em;
   }
 }
@@ -71,7 +71,7 @@ ul.menu li a.active {
     margin: 0 1.5%;
   }
 
-  .pane-page-site-name {
+  #site-name {
     font-size:4.3em;
   }
 }
