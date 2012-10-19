@@ -108,7 +108,7 @@ function dc_layout_default_page_manager_handlers() {
     $pane->access = array();
     $pane->configuration = array(
       'search' => '@drupalsverige',
-      'items' => '3',
+      'items' => '6',
       'override_title' => 1,
       'override_title_text' => 'Twitter',
     );
