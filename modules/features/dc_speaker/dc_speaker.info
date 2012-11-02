@@ -1,7 +1,7 @@
 name = Speaker
 description = Holds speaker.
 core = 7.x
-package = Features
+package = DrupalCamp
 version = 7.x-1.0-beta1
 project = dc_speaker
 dependencies[] = ctools

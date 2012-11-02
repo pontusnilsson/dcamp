@@ -1,7 +1,7 @@
 name = Page
 description = Holds page.
 core = 7.x
-package = Features
+package = DrupalCamp
 version = 7.x-1.0-beta1
 project = dc_page
 dependencies[] = features
