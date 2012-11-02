@@ -8,19 +8,20 @@
  * resize the font using body classes.
  */
 html {
-  font-size: 81.3%;
+  font-size: 16px;
 }
 body {
-  font-family: Verdana, Geneva, "DejaVu Sans", sans-serif;
-  line-height: 1.5;
+  font-family: Arvo;
+  line-height: 20px;
   background: #f5f5f5;
   color:#353d48;
 }
 h1 {
-  font-size: 1.538em;
+  font-size: 24px;
 }
 h2 {
-  font-size: 1.385em;
+  font-size: 29px;
+  line-height: 35px;
 }
 h3 {
   font-size: 1.231em;

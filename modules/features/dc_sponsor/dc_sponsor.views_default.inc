@@ -51,7 +51,7 @@ function dc_sponsor_views_default_views() {
   $handler->display->display_options['fields']['field_dc_image']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_dc_image']['alter']['html'] = 0;
   $handler->display->display_options['fields']['field_dc_image']['element_type'] = 'div';
-  $handler->display->display_options['fields']['field_dc_image']['element_class'] = 'sponsor-image';
+  $handler->display->display_options['fields']['field_dc_image']['element_class'] = 'sponsor-image dc-image';
   $handler->display->display_options['fields']['field_dc_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_dc_image']['element_default_classes'] = 0;
   $handler->display->display_options['fields']['field_dc_image']['hide_empty'] = 0;

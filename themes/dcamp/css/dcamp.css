@@ -1,8 +1,16 @@
+body {
+  font-size:16px;
+}
+
 h1 {
   margin: 0;
 }
 .front h1 {
   display: none;
+}
+
+.pane-page-content { 
+  margin: 0 20px;
 }
 
 #footer {
@@ -11,7 +19,7 @@ h1 {
 
 .pane-page-slogan {
   letter-spacing: 0.2em;
-  font-size: 1.4em;
+  font-size: 18ox;
   text-align: center;
   text-transform: uppercase;
   padding-top: 1em;
@@ -31,9 +39,11 @@ h1 {
   margin: 0 auto;
 }
 
-nav ul.primary-menu a {
+nav ul.primary-menu li a {
   text-transform: uppercase;
   letter-spacing: 0.15em;
+  font-size:18px;
+  margin: 3px;
 }
 
 nav ul.primary-menu a.active {
@@ -43,6 +53,15 @@ nav ul.primary-menu a.active {
 nav.primary-menu-wrapper,
 .pane-dc-sponsor-panel-pane-1 {
   text-align: center;
+}
+
+.pane-dc-sponsor-panel-pane-1 {
+  padding:60px 0;
+}
+
+.pane-dc-sponsor-panel-pane-1 .pane-title {
+  width:540px;
+  margin:0 auto;
 }
 
 nav.primary-menu-wrapper ul {
@@ -81,7 +100,7 @@ ul.menu li a.active {
     margin: 0 1%;
   }
   #site-name {
-    font-size: 4.3em;
+    font-size: 58px;
   }
 }
 
@@ -91,7 +110,7 @@ ul.menu li a.active {
     margin: 0 1.5%;
   }
   #site-name {
-    font-size: 4.3em;
+    font-size: 58px;
   }
 }
 
@@ -102,7 +121,7 @@ ul.menu li a.active {
   }
 
   #site-name {
-    font-size: 4.3em;
+    font-size: 58px;
   }
 }
 
@@ -112,6 +131,7 @@ ul.menu li a.active {
 
 .tweet {
   text-align: center;
+  padding-bottom:25px;
 }
 
 .tweet .tweet-time a {
@@ -166,6 +186,7 @@ html.js .dc-image:hover img {
 
 .pane-dc-ticketpromo {
   text-align:center;
+  padding:20px 0;
 }
 
 @font-face {

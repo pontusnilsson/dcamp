@@ -52,7 +52,7 @@ function dc_pages_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = '';
+  $display->title = 'DrupalCamp Stockholm';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
