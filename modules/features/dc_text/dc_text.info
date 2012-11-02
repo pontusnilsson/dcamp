@@ -6,7 +6,6 @@ php = 5.2.4
 version = 7.x-1.0-beta1
 project = dc_text
 dependencies[] = features
-dependencies[] = lexicon
 features[features_api][] = api:1
 features[filter][] = dc_editor
 features[filter][] = dc_fullhtml
