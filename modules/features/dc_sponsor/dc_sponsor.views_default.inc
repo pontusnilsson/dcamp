@@ -22,6 +22,7 @@ function dc_sponsor_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['css_class'] = 'view-three-three-three';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -29,8 +30,9 @@ function dc_sponsor_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['row_class'] = 'sponsor-teaser teaser-item';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Content: Image */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_dc_image']['id'] = 'field_dc_image';
   $handler->display->display_options['fields']['field_dc_image']['table'] = 'field_data_field_dc_image';
   $handler->display->display_options['fields']['field_dc_image']['field'] = 'field_dc_image';
@@ -48,14 +50,16 @@ function dc_sponsor_views_default_views() {
   $handler->display->display_options['fields']['field_dc_image']['alter']['strip_tags'] = 0;
   $handler->display->display_options['fields']['field_dc_image']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_dc_image']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_dc_image']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_dc_image']['element_class'] = 'sponsor-image';
   $handler->display->display_options['fields']['field_dc_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_dc_image']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_dc_image']['element_default_classes'] = 0;
   $handler->display->display_options['fields']['field_dc_image']['hide_empty'] = 0;
   $handler->display->display_options['fields']['field_dc_image']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_dc_image']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_dc_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_dc_image']['settings'] = array(
-    'image_style' => 'dc_teaser',
+    'image_style' => 'dc_logo_teaser',
     'image_link' => '',
   );
   $handler->display->display_options['fields']['field_dc_image']['field_api_classes'] = 0;

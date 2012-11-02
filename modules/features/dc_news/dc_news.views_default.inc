@@ -50,6 +50,7 @@ function dc_news_views_default_views() {
   $handler->display->display_options['fields']['field_dc_image']['alter']['strip_tags'] = 0;
   $handler->display->display_options['fields']['field_dc_image']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_dc_image']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_dc_image']['element_class'] = 'dc-image';
   $handler->display->display_options['fields']['field_dc_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_dc_image']['element_default_classes'] = 1;
   $handler->display->display_options['fields']['field_dc_image']['hide_empty'] = 0;

@@ -1,44 +1,60 @@
+h1 {
+  margin: 0;
+}
+
+#main-content, .block-inner, .pane-inner, .menu-wrapper, .branding-elements, .breadcrumb-wrapper, .attribution, .at-panel .rounded-corner, div.messages {
+  margin: 0;
+}
+
 .pane-page-slogan {
   letter-spacing: 0.2em;
-  font-size:1.4em;
-  text-align:center;
-  text-transform:uppercase;
-  padding-top:1em;
+  font-size: 1.4em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 1em;
 }
 .pane-page-logo {
   text-align:center;
 }
 #site-name {
-  font-size:3em;
-  text-transform:uppercase;
-  text-align:center;
-  font-weight:bold;
-  line-height:1em;
-  max-width:880px;
-  margin:0 auto;
+  font-size: 3em;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1em;
+  max-width: 880px;
+  margin: 0 auto;
 }
 nav ul.primary-menu a {
-  text-transform:uppercase;
-  letter-spacing:0.15em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
 }
 nav ul.primary-menu a.active {
-  text-decoration:line-through;
+  text-decoration: line-through;
 }
 nav.primary-menu-wrapper,
 .pane-dc-sponsor-panel-pane-1 {
-  text-align:center;
+  text-align: center;
 }
 nav.primary-menu-wrapper ul {
-  display:inline-block;
+  display: inline-block;
 }
 ul.menu li a.active {
-  color:#353D48;
+  color: #353D48;
 }
 
 .view-three-three-three .teaser-item {
-  width:100%;
-  float:left;
+  width: 100%;
+  float: left;
+  position: relative;
+}
 
+.view-dc-news .teaser-item {
+  height: 400px;
+}
+
+.sponsor-image {
+  padding: 30px 0;
 }
 
 @media only screen and (max-width:320px) {
@@ -48,32 +64,32 @@ ul.menu li a.active {
 
 @media only screen and (min-width:481px) and (max-width:768px) {
   .view-three-three-three .teaser-item {
-    width:48%;
+    width: 48%;
     margin: 0 1%;
   }
   #site-name {
-    font-size:4.3em;
+    font-size: 4.3em;
   }
 }
 
 @media only screen and (min-width:769px) and (max-width:1024px) {
   .view-three-three-three .teaser-item {
-    width:30%;
+    width: 30%;
     margin: 0 1.5%;
   }
   #site-name {
-    font-size:4.3em;
+    font-size: 4.3em;
   }
 }
 
 @media only screen and (min-width:1024px) {
   .view-three-three-three .teaser-item {
-    width:30%;
+    width: 30%;
     margin: 0 1.5%;
   }
 
   #site-name {
-    font-size:4.3em;
+    font-size: 4.3em;
   }
 }
 
@@ -82,13 +98,46 @@ ul.menu li a.active {
 }
 
 .tweet {
-  text-align:center;
+  text-align: center;
 }
 
 .tweet .tweet-time a {
-  color:#919191;
+  color: #919191;
 }
 
 .tweet .tweet-time {
-  margin-top:1em;
+  margin-top: 1em;
+}
+
+/* Grayscale effect */
+html.js .dc-image img {
+  opacity: 1;
+}
+html.js .dc-image img:first-child {
+  opacity: 0;
+}
+html.js .dc-image img {
+  filter: gray; /* IE6-9 */
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+}
+html.js .dc-image img:hover {
+  filter: none;
+}
+
+html.js .dc-image:hover img {
+  opacity: 1 !important;
+  filter: none;
+}
+
+.ticket-promo a {
+      background: none repeat scroll 0 0 #353D48;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 13px 43px;
+
+}
+.pane-dc-ticketpromo {
+  text-align:center;
 }

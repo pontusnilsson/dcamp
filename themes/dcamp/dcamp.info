@@ -31,6 +31,9 @@
   ; Dark stylesheet for building negative or dark designs.
   ;stylesheets[all][] = css/dark.css
 
+  scripts[] = scripts/custom.js
+  scripts[] = scripts/grayscale.js
+
 
 ;----------// Regions
 
