@@ -5,6 +5,10 @@ h1 {
   display: none;
 }
 
+#footer {
+  text-align: center;
+}
+
 .pane-page-slogan {
   letter-spacing: 0.2em;
   font-size: 1.4em;
@@ -52,6 +56,10 @@ ul.menu li a.active {
 .view-three-three-three .teaser-item {
   width: 100%;
   float: left;
+}
+
+.view-dc-news.view-three-three-three .teaser-item {
+  min-height:400px;
 }
 
 .view-three-three-three .teaser-item .dc-image {
@@ -161,13 +169,12 @@ html.js .dc-image:hover img {
 }
 
 @font-face {
-    font-family: 'WebSymbolsRegular';
+  font-family: 'WebSymbolsRegular';
     src: url('websymbols-regular-webfont.eot');
     src: url('websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('websymbols-regular-webfont.woff') format('woff'),
          url('websymbols-regular-webfont.ttf') format('truetype'),
          url('websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+  font-weight: normal;
+  font-style: normal;
 }
