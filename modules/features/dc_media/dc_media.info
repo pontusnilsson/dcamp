@@ -7,4 +7,5 @@ version = 7.x-1.0-beta1
 project = dc_media
 dependencies[] = image
 features[features_api][] = api:1
+features[image][] = dc_logo_teaser
 features[image][] = dc_teaser
