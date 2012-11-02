@@ -1,9 +1,8 @@
 h1 {
   margin: 0;
 }
-
-#main-content, .block-inner, .pane-inner, .menu-wrapper, .branding-elements, .breadcrumb-wrapper, .attribution, .at-panel .rounded-corner, div.messages {
-  margin: 0;
+.front h1 {
+  display: none;
 }
 
 .pane-page-slogan {
@@ -13,9 +12,11 @@ h1 {
   text-transform: uppercase;
   padding-top: 1em;
 }
+
 .pane-page-logo {
   text-align:center;
 }
+
 #site-name {
   font-size: 3em;
   text-transform: uppercase;
@@ -25,20 +26,25 @@ h1 {
   max-width: 880px;
   margin: 0 auto;
 }
+
 nav ul.primary-menu a {
   text-transform: uppercase;
   letter-spacing: 0.15em;
 }
+
 nav ul.primary-menu a.active {
   text-decoration: line-through;
 }
+
 nav.primary-menu-wrapper,
 .pane-dc-sponsor-panel-pane-1 {
   text-align: center;
 }
+
 nav.primary-menu-wrapper ul {
   display: inline-block;
 }
+
 ul.menu li a.active {
   color: #353D48;
 }
@@ -46,11 +52,10 @@ ul.menu li a.active {
 .view-three-three-three .teaser-item {
   width: 100%;
   float: left;
-  position: relative;
 }
 
-.view-dc-news .teaser-item {
-  height: 400px;
+.view-three-three-three .teaser-item .dc-image {
+  position:relative;
 }
 
 .sponsor-image {
@@ -110,12 +115,25 @@ ul.menu li a.active {
 }
 
 /* Grayscale effect */
+
+html.js .dc-image img {
+  top:0;
+  left:0;
+}
+
+html.js .dc-image .img-wrapper {
+  position:relative;
+  margin: 0 auto;
+}
+
 html.js .dc-image img {
   opacity: 1;
 }
+
 html.js .dc-image img:first-child {
   opacity: 0;
 }
+
 html.js .dc-image img {
   filter: gray; /* IE6-9 */
   -webkit-transition: opacity 0.3s;
@@ -131,13 +149,25 @@ html.js .dc-image:hover img {
 }
 
 .ticket-promo a {
-      background: none repeat scroll 0 0 #353D48;
-    color: #FFFFFF;
-    font-size: 24px;
-    font-weight: bold;
-    padding: 13px 43px;
-
+  background: none repeat scroll 0 0 #353D48;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 13px 43px;
 }
+
 .pane-dc-ticketpromo {
   text-align:center;
+}
+
+@font-face {
+    font-family: 'WebSymbolsRegular';
+    src: url('websymbols-regular-webfont.eot');
+    src: url('websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('websymbols-regular-webfont.woff') format('woff'),
+         url('websymbols-regular-webfont.ttf') format('truetype'),
+         url('websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }

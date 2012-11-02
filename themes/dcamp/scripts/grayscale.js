@@ -7,11 +7,11 @@
   $(window).load(function() {
     var imageel = '.dc-image img';
     // clone image
-    $(imageel).each(function() {
+    $(imageel).each(function() {console.log(this);
       var el = $(this);
       el.css({
         "position":"absolute"
-      }).wrap("<div class='img-wrapper' style='display: inline-block'>").clone().addClass('img-grayscale-original').css({
+      }).wrap("<div class='img-wrapper'>").clone().addClass('img-grayscale-original').css({
         "position":"absolute",
         "z-index":"998"
       }).insertBefore(el).queue(function(){
