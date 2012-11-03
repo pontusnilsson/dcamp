@@ -22,11 +22,12 @@ h1 {
   font-size: 18ox;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 1em;
+  padding-top: 1.5em;
 }
 
 .pane-page-logo {
-  text-align:center;
+  padding-top: 20px;
+  text-align: center;
 }
 
 #site-name {
@@ -41,10 +42,15 @@ h1 {
 
 nav ul.primary-menu li a {
   text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.2em;
   font-size:18px;
   margin: 3px;
 }
+
+nav ul.primary-menu li a:hover {
+  color: #888;
+}
+
 
 nav ul.primary-menu a.active {
   text-decoration: line-through;
@@ -53,6 +59,10 @@ nav ul.primary-menu a.active {
 nav.primary-menu-wrapper,
 .pane-dc-sponsor-panel-pane-1 {
   text-align: center;
+}
+
+nav.primary-menu-wrapper {
+  padding: 40px 0;
 }
 
 .pane-dc-sponsor-panel-pane-1 {
@@ -198,4 +208,20 @@ html.js .dc-image:hover img {
          url('websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
   font-weight: normal;
   font-style: normal;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to { 
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+#logo img {
+  -webkit-animation-name:             rotate; 
+  -webkit-animation-duration:         40s; 
+  -webkit-animation-iteration-count:  infinite;
+  -webkit-animation-timing-function: linear;
 }
