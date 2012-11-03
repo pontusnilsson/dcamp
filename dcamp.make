@@ -14,6 +14,12 @@ projects[panels_everywhere][subdir] = contrib
 projects[twitter_pull][version] = 1.0-rc3
 projects[twitter_pull][subdir] = contrib
 
+projects[disqus][version] = 1.9
+projects[disqus][subdir] = contrib
+
+projects[backup_migrate][version] = 2.4
+projects[backup_migrate][subdir] = contrib
+
 ; Fetch the current version of NS Core.
 projects[cod][type] = module
 projects[cod][version] = 2.x
