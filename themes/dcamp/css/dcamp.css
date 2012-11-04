@@ -1,16 +1,41 @@
 body {
-  font-size:16px;
+  font-size: 16px;
 }
 
 h1 {
+  font-size: 36px !important;
   margin: 0;
 }
+
 .front h1 {
   display: none;
 }
 
+.pane-page-title h1 {
+  margin: 30px auto !important;
+  text-align: center;
+}
+
+.pane-disqus-disqus-comments h2.pane-title {
+  border-top: 2px solid;
+  margin: 40px auto;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.pane-dc-twitter h2.pane-title {
+  margin: 0 auto 40px auto;
+  padding-top: 40px;
+  text-align: center;
+}
+
 .pane-page-content { 
   margin: 0 20px;
+}
+
+.one-column {
+  margin: 0 auto;
+  max-width: 709px;
 }
 
 #footer {
@@ -19,7 +44,7 @@ h1 {
 
 .pane-page-slogan {
   letter-spacing: 0.2em;
-  font-size: 18ox;
+  font-size: 18px;
   text-align: center;
   text-transform: uppercase;
   padding-top: 1.5em;
@@ -50,7 +75,6 @@ nav ul.primary-menu li a {
 nav ul.primary-menu li a:hover {
   color: #888;
 }
-
 
 nav ul.primary-menu a.active {
   text-decoration: line-through;
