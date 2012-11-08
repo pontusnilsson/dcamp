@@ -35,7 +35,7 @@ h1 {
 
 .one-column {
   margin: 0 auto;
-  max-width: 710px;
+  max-width: 1140px;
 }
 
 #footer {
@@ -113,6 +113,11 @@ ul.menu li a.active {
 
 .view-dc-news.view-three-three-three .teaser-item {
   min-height:400px;
+}
+
+.view-dc-news.view-three-three-three .teaser-item h2 {
+  font-size: 21px;
+  line-height: 21px;
 }
 
 .view-three-three-three .teaser-item .dc-image {
@@ -247,5 +252,5 @@ html.js .dc-image:hover img {
   -webkit-animation-name:             rotate; 
   -webkit-animation-duration:         40s; 
   -webkit-animation-iteration-count:  infinite;
-  -webkit-animation-timing-function: linear;
+  -webkit-animation-timing-function:  linear;
 }
