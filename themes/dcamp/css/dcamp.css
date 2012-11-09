@@ -171,6 +171,7 @@ ul.menu li a.active {
 .tweet {
   text-align: center;
   padding-bottom:25px;
+  min-height:200px;
 }
 
 .tweet .tweet-time a {
