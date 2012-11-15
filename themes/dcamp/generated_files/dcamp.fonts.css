@@ -1,3 +1,9 @@
-body{font-size:100%;}
+body{font-size:100%;font-family:'Arvo'}
 #page-title{font-size:2.3em;}
-#menu-bar .menu-wrapper,#primary-menu-bar .menu-wrapper{font-size:1.5em;}
+h1,h2,h3,h4{font-family:'Arvo'}
+h5,h6{font-family:'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif}
+h1{font-size:3em;}
+#menu-bar .menu-wrapper,#primary-menu-bar .menu-wrapper{font-size:1.5em;font-family:'Arvo'}
+#secondary-menu-bar .menu-wrapper,#menu-bar #block-system-user-menu{font-family:'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif}
+nav.block .block-content{font-family:'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif}
+ruby ruby{font-family:'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif}
