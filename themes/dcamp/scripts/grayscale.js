@@ -15,12 +15,12 @@
         "position":"absolute",
         "z-index":"998"
       }).insertBefore(el).queue(function(){
-        var el = $(this);
+        /*var el = $(this);
         el.parent().css({
           "width":this.width,
           "height":this.height
         });
-        el.dequeue();
+        el.dequeue();*/
       });
       if(!$.browser.msie)
         this.src = grayscale(this.src);
