@@ -12,7 +12,7 @@
       el.css({
         "position":"absolute"
       }).wrap("<div class='img-wrapper'>").clone().addClass('img-grayscale-original').css({
-        "position":"absolute",
+        "position":"relative",
         "z-index":"998"
       }).insertBefore(el).queue(function(){
         /*var el = $(this);
