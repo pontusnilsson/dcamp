@@ -17,6 +17,6 @@ $plugin = array(
 function dc_logo_content_type_render($subtype, $conf, $args, $context) {
   $block = new stdClass();
   $path = drupal_get_path('theme', 'dcamp');
-  $block->content = '<a href="/"><img id="logo" src="' . $path .  '/logo.png"></a><a href="/"><img id ="logo2" src="' . $path .  '/logo2.png"></a><a href="/"><img id ="logo3" src="' . $path .  '/logo3.png"></a>';
+  $block->content = '<a href="/"><img id="logo" src="/' . $path .  '/logo.png"></a><a href="/"><img id ="logo2" src="/' . $path .  '/logo2.png"></a><a href="/"><img id ="logo3" src="/' . $path .  '/logo3.png"></a>';
   return $block;
 }
