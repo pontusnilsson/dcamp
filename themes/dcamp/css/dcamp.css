@@ -113,6 +113,7 @@ ul.menu li a.active {
 
 .view-dc-news.view-three-three-three .teaser-item {
   min-height:400px;
+  margin-bottom: 1em;
 }
 
 .view-dc-news.view-three-three-three .teaser-item h2 {
@@ -154,6 +155,11 @@ ul.menu li a.active {
 }
 
 @media only screen and (min-width:1024px) {
+  .page-node .pane-page-content {
+     margin: 0 auto;
+     width: 65.5%;
+   }
+  
   .view-three-three-three .teaser-item {
     width: 30%;
     margin: 0 1.5%;
