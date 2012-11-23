@@ -60,7 +60,7 @@ function dc_pages_default_page_manager_pages() {
     $pane->panel = 'one_main';
     $pane->type = 'dc_ticketpromo';
     $pane->subtype = 'dc_ticketpromo';
-    $pane->shown = TRUE;
+    $pane->shown = FALSE;
     $pane->access = array();
     $pane->configuration = array(
       'search' => NULL,

@@ -18,6 +18,7 @@ features[ctools][] = views:views_default:3.0
 features[features_api][] = api:1
 features[field][] = node-dc_sponsor-body
 features[field][] = node-dc_sponsor-field_dc_image
+features[field][] = node-dc_sponsor-field_url
 features[node][] = dc_sponsor
 features[variable][] = comment_anonymous_dc_sponsor
 features[variable][] = comment_dc_sponsor

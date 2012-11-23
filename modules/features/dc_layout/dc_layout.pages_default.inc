@@ -107,10 +107,10 @@ function dc_layout_default_page_manager_handlers() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'search' => '@drupalsverige',
+      'search' => '#Drupalsthlm',
       'items' => '6',
       'override_title' => 1,
-      'override_title_text' => 'Twitter',
+      'override_title_text' => 'Twitter #Drupalsthlm',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -132,7 +132,7 @@ function dc_layout_default_page_manager_handlers() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => 'Drupal is a <a target="_blank" href="http://drupal.com/trademark">registered trademark</a> of <a target="_blank" href="http://buytaert.net/">Dries Buytaert</a> | Visit the Swedish Drupal community at <a href="http://groups.drupal.org/sweden" target="_blank">groups.drupal.org/sweden</a> | <a href="/about-site">About this site</a>',
+      'body' => 'Drupal is a <a target="_blank" href="http://drupal.com/trademark">registered trademark</a> of <a target="_blank" href="http://buytaert.net/">Dries Buytaert</a> | Visit the Swedish Drupal community at <a href="http://groups.drupal.org/sweden" target="_blank">groups.drupal.org/sweden</a>',
       'format' => 'dc_editor',
       'substitute' => 1,
     );
@@ -185,8 +185,8 @@ function dc_layout_default_page_manager_handlers() {
     $pane = new stdClass();
     $pane->pid = 'new-7';
     $pane->panel = 'header';
-    $pane->type = 'page_logo';
-    $pane->subtype = 'page_logo';
+    $pane->type = 'dc_logo';
+    $pane->subtype = 'dc_logo';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -221,11 +221,23 @@ function dc_layout_default_page_manager_handlers() {
     $pane = new stdClass();
     $pane->pid = 'new-9';
     $pane->panel = 'menu_bar';
-    $pane->type = 'pane_navigation';
-    $pane->subtype = 'pane_navigation';
+    $pane->type = 'menu_tree';
+    $pane->subtype = 'main-menu';
     $pane->shown = TRUE;
     $pane->access = array();
-    $pane->configuration = array();
+    $pane->configuration = array(
+      'menu_name' => 'main-menu',
+      'parent_mlid' => 'main-menu:0',
+      'title_link' => 0,
+      'admin_title' => '',
+      'level' => '1',
+      'follow' => 0,
+      'depth' => '1',
+      'expanded' => 0,
+      'sort' => 0,
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
@@ -238,6 +250,36 @@ function dc_layout_default_page_manager_handlers() {
     $display->panels['menu_bar'][0] = 'new-9';
     $pane = new stdClass();
     $pane->pid = 'new-10';
+    $pane->panel = 'menu_bar';
+    $pane->type = 'menu_tree';
+    $pane->subtype = 'main-menu';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'menu_name' => 'main-menu',
+      'parent_mlid' => 'main-menu:0',
+      'title_link' => 0,
+      'admin_title' => '',
+      'level' => '2',
+      'follow' => 0,
+      'depth' => 0,
+      'expanded' => 0,
+      'sort' => 0,
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-10'] = $pane;
+    $display->panels['menu_bar'][1] = 'new-10';
+    $pane = new stdClass();
+    $pane->pid = 'new-11';
     $pane->panel = 'tertiary_content';
     $pane->type = 'views_panes';
     $pane->subtype = 'dc_sponsor-panel_pane_1';
@@ -255,8 +297,8 @@ function dc_layout_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-10'] = $pane;
-    $display->panels['tertiary_content'][0] = 'new-10';
+    $display->content['new-11'] = $pane;
+    $display->panels['tertiary_content'][0] = 'new-11';
   $display->hide_title = PANELS_TITLE_PANE;
   $display->title_pane = 'new-2';
   $handler->conf['display'] = $display;
@@ -295,7 +337,7 @@ function dc_layout_default_page_manager_handlers() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-11';
+    $pane->pid = 'new-12';
     $pane->panel = 'one_main';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_dc_image';
@@ -323,10 +365,10 @@ function dc_layout_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-11'] = $pane;
-    $display->panels['one_main'][0] = 'new-11';
+    $display->content['new-12'] = $pane;
+    $display->panels['one_main'][0] = 'new-12';
     $pane = new stdClass();
-    $pane->pid = 'new-12';
+    $pane->pid = 'new-13';
     $pane->panel = 'one_main';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:body';
@@ -351,17 +393,19 @@ function dc_layout_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-12'] = $pane;
-    $display->panels['one_main'][1] = 'new-12';
+    $display->content['new-13'] = $pane;
+    $display->panels['one_main'][1] = 'new-13';
     $pane = new stdClass();
-    $pane->pid = 'new-13';
+    $pane->pid = 'new-14';
     $pane->panel = 'one_main';
-    $pane->type = 'block';
-    $pane->subtype = 'disqus-disqus_comments';
+    $pane->type = 'entity_field_extra';
+    $pane->subtype = 'node:webform';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 0,
+      'view_mode' => 'full',
+      'context' => 'argument_entity_id:node_1',
+      'override_title' => 1,
       'override_title_text' => '',
     );
     $pane->cache = array();
@@ -372,10 +416,31 @@ function dc_layout_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $display->content['new-13'] = $pane;
-    $display->panels['one_main'][2] = 'new-13';
+    $display->content['new-14'] = $pane;
+    $display->panels['one_main'][2] = 'new-14';
+    $pane = new stdClass();
+    $pane->pid = 'new-15';
+    $pane->panel = 'one_main';
+    $pane->type = 'block';
+    $pane->subtype = 'disqus-disqus_comments';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => 'Talk',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 3;
+    $pane->locks = array();
+    $display->content['new-15'] = $pane;
+    $display->panels['one_main'][3] = 'new-15';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-11';
+  $display->title_pane = 'new-12';
   $handler->conf['display'] = $display;
   $export['node_view_panel_context'] = $handler;
 

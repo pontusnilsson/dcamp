@@ -32,13 +32,39 @@ function dc_sponsor_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['row_class'] = 'sponsor-teaser teaser-item';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Content: URL */
+  $handler->display->display_options['fields']['field_url']['id'] = 'field_url';
+  $handler->display->display_options['fields']['field_url']['table'] = 'field_data_field_url';
+  $handler->display->display_options['fields']['field_url']['field'] = 'field_url';
+  $handler->display->display_options['fields']['field_url']['label'] = '';
+  $handler->display->display_options['fields']['field_url']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_url']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_url']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['field_url']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['field_url']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['field_url']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_url']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['field_url']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_url']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['field_url']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['field_url']['alter']['more_link'] = 0;
+  $handler->display->display_options['fields']['field_url']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_url']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['field_url']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_url']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_url']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_url']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['field_url']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_url']['hide_alter_empty'] = 1;
+  $handler->display->display_options['fields']['field_url']['field_api_classes'] = 0;
   /* Field: Field: Image */
   $handler->display->display_options['fields']['field_dc_image']['id'] = 'field_dc_image';
   $handler->display->display_options['fields']['field_dc_image']['table'] = 'field_data_field_dc_image';
   $handler->display->display_options['fields']['field_dc_image']['field'] = 'field_dc_image';
   $handler->display->display_options['fields']['field_dc_image']['label'] = '';
   $handler->display->display_options['fields']['field_dc_image']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['field_dc_image']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['field_dc_image']['alter']['make_link'] = 1;
+  $handler->display->display_options['fields']['field_dc_image']['alter']['path'] = '[field_url]';
   $handler->display->display_options['fields']['field_dc_image']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['field_dc_image']['alter']['external'] = 0;
   $handler->display->display_options['fields']['field_dc_image']['alter']['replace_spaces'] = 0;
@@ -51,7 +77,7 @@ function dc_sponsor_views_default_views() {
   $handler->display->display_options['fields']['field_dc_image']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_dc_image']['alter']['html'] = 0;
   $handler->display->display_options['fields']['field_dc_image']['element_type'] = 'div';
-  $handler->display->display_options['fields']['field_dc_image']['element_class'] = 'sponsor-image dc-image';
+  $handler->display->display_options['fields']['field_dc_image']['element_class'] = 'sponsor-image';
   $handler->display->display_options['fields']['field_dc_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_dc_image']['element_default_classes'] = 0;
   $handler->display->display_options['fields']['field_dc_image']['hide_empty'] = 0;
@@ -63,6 +89,10 @@ function dc_sponsor_views_default_views() {
     'image_link' => '',
   );
   $handler->display->display_options['fields']['field_dc_image']['field_api_classes'] = 0;
+  /* Sort criterion: Global: Random */
+  $handler->display->display_options['sorts']['random']['id'] = 'random';
+  $handler->display->display_options['sorts']['random']['table'] = 'views';
+  $handler->display->display_options['sorts']['random']['field'] = 'random';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
