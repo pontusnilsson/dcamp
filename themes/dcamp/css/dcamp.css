@@ -65,6 +65,7 @@ h1 {
   margin: 0 auto;
 }
 
+div.menu-block-ctools-main-menu-1 ul.menu li a,
 nav ul.primary-menu li a {
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -72,20 +73,44 @@ nav ul.primary-menu li a {
   margin: 3px;
 }
 
-nav ul.primary-menu li a:hover {
+div.menu-block-ctools-main-menu-2 ul.menu li a {
+  font-size:16px;
+  text-transform:uppercase;
+}
+
+nav ul.primary-menu li a:hover,
+div.menu-block-ctools-main-menu-1 li a:hover,
+div.menu-block-ctools-main-menu-2 li a:hover {
   color: #888;
 }
 
-nav ul.primary-menu a.active {
+nav ul.primary-menu a.active,
+div.menu-block-ctools-main-menu-1 a.active,
+div.menu-block-ctools-main-menu-2 a.active {
   text-decoration: line-through;
 }
 
+#menu-bar div.menu-block-ctools-main-menu-1 ul,
+#menu-bar div.menu-block-ctools-main-menu-2 ul {
+  display: inline-block;
+  margin: 0 auto;
+  overflow: visible;
+  width: auto;
+  text-align:center;
+}
+
+div.pane-menu-tree.pane-main-menu {
+  text-align:center;
+}
+
 nav.primary-menu-wrapper,
-.pane-dc-sponsor-panel-pane-1 {
+.pane-dc-sponsor-panel-pane-1,
+div.menu-block-ctools-main-menu-1 {
   text-align: center;
 }
 
-nav.primary-menu-wrapper {
+nav.primary-menu-wrapper,
+div.menu-block-ctools-main-menu-1 {
   padding: 40px 0;
 }
 

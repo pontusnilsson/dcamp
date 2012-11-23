@@ -5,6 +5,9 @@ core = 7.x
 projects[browscap_ctools][verison] = 1.0
 projects[browscap_ctools][subdir] = contrib
 
+projects[menu_block][version] = 2.3
+projects[menu_block][subdir] = contrib
+
 projects[browscap][version] = 1.3
 projects[browscap][subdir] = contrib
 

@@ -1,0 +1,7 @@
+name = Custom
+description = Holds customizations to DrupalCamp.
+core = 7.x
+package = DrupalCamp
+php = 5.2.4
+project = dc_custom
+
