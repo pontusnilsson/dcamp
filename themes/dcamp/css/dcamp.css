@@ -2,6 +2,10 @@ body {
   font-size: 16px;
 }
 
+.pane-page-content a {
+  font-weight:bold;
+}
+
 h1 {
   font-size: 36px !important;
   margin: 0;
